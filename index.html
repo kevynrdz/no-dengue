@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NO-DENGUE - Prevención de dengue Argentina</title>
+<meta name="description" content="Información sobre Dengue, Zika, Aedes Aegypti, salud, prevención en Misiones, Argentina.">
+<meta name="keywords" content="Dengue, Zika, Aedes Aegypti, salud, prevención, Misiones, Argentina">
+<meta name="author" content="kevynrdz">
+<link rel="canonical" href="https://www.kevynrdz.com.ar/no-dengue">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Emoji&display=swap');
+  li {
+    font-family: Noto Emoji, sans-serif;
+  }
+  a{
+    color: #e2ad00;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+  }
+  .container {
+    min-height: calc(100vh - 100px); /* Altura de la ventana - altura del footer */
+    display: flex;
+    flex-direction: row;
+  }
+  .sidebar {
+    width: 200px;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto; /* Permite desplazamiento si el contenido es más largo que el sidebar */
+  }
+  .content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 200px; /* Ajusta el margen izquierdo para compensar el ancho del sidebar */
+  }
+  .btn {
+    background-color: #222;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  #menu-toggle-label {
+    font-size: 2.5em; /* Aumenta el tamaño del ícono del menú */
+    display: none; /* Oculta el botón en dispositivos de pantalla grande */
+  }
+  #logo {
+    width: 150px; /* ajusta el tamaño según lo necesites */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Efecto de transición */
+  }
+  .sidebar ul li a:hover {
+    color: #e2ad00; /* Cambia el color al pasar el mouse */
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .content {
+      margin-left: 0; /* Elimina el margen izquierdo en dispositivos móviles */
+    }
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: none;
+      text-align: center; /* Alinea los ítems al centro */
+    }
+    .sidebar.show {
+      display: block;
+    }
+    .content {
+      margin-top: 60px; /* Ajusta el margen superior para dejar espacio al navbar */
+    }
+    #menu-toggle-label {
+      display: block; /* Muestra el botón solo en dispositivos móviles */
+    }
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+  }
+</style>
+</head>
+<body>
+
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" id="menu-toggle-label">&#9776;</label>
+
+<div class="container">
+  <div class="sidebar">
+    <img src="no-dengue-logo.svg" alt="Logo" id="logo">
+    <!--<h2>Información de Salud en Misiones, Argentina</h2>-->
+    <ul>
+      <li><a href="#"><b>📌 REPORTAR</b></a></li>
+      <li><a href="./prevencion.html">👩‍⚕️ PREVENCIÓN</a></li>
+      <li><a href="./estadisticas.html">📊 ESTADÍSTICAS</a></li>
+      <li><a href="#">💰 DONAR</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h3>Reportar criadero de mosquitos</h3>
+    <div class="row">
+      <div class="col-sm-6">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScr89JOw22nsE0AbxteISMtw3nxLwqe4ABDRzqHCkCBNSKo1A/formResponse"
+      target="_self"
+      id="bootstrapForm"
+      method="POST">
+    <fieldset>
+        <h2><small></small></h2>
+    </fieldset>
+    <fieldset>
+        <legend for="">Email</legend>
+        <div class="form-group">
+            <input id="emailAddress" type="email" name="emailAddress" class="form-control" required>
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "dropdown" id: "1596999076" -->
+    <fieldset>
+        <legend for="1596999076">Provincia</legend>
+        <div class="form-group">
+            <select id="1596999076" name="entry.1354581777" class="form-control">
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucumán">Tucumán</option>
+            </select>
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "short" id: "433847925" -->
+    <fieldset>
+        <legend for="433847925">Ciudad / Pueblo</legend>
+        <div class="form-group">
+            <input id="1448547532" type="text" name="entry.1448547532" class="form-control" required>
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "paragraph" id: "840384241" -->
+    <fieldset>
+        <legend for="840384241">Dirección</legend>
+        <div class="form-group">
+            <textarea id="477622220" name="entry.477622220" class="form-control" required></textarea>
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "choices" id: "1430172253" -->
+    <fieldset>
+        <legend for="1430172253">Tipo de criadero</legend>
+        <div class="form-group">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.1029825123" value="Acumulación de recipientes" required>
+                    Acumulación de recipientes
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.1029825123" value="Agua estancada, laguna, charco." required>
+                    Agua estancada, laguna, charco.
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.1029825123" value="Maleza alta" required>
+                    Maleza alta
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.1029825123" value="__other_option__" required>
+                </label>
+                <input type="text" name="entry.1029825123.other_option_response" placeholder="Otro">
+            </div>
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "checkboxes" id: "1557651576" -->
+    <fieldset>
+        <legend for="1557651576"></legend>
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="entry.1081831061" value="Si, he leído y acepto los Términos y condiciones." required>
+                    Si, he leído y acepto los <a href="https://www.kevynrdz.com.ar/no-dengue/condiciones.html">Términos y condiciones.</a>
+                </label>
+            </div>
+        </div>
+    </fieldset>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="-1585403200840347586">
+    <!--
+        CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+        This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+        Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+        We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+    -->
+    <input type="hidden" name="pageHistory" value="0">
+
+    <input class="btn btn-primary" type="submit" value="Enviar">
+</form>
+      </div>
+      <div class="col-sm-6">
+        <!--<p>MAP</p>-->
+        <br>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1ANPYfXC0SFHBpy5ax05q0DjXi5O5fQQ&ehbc=2E312F&noprof=1" width="400" height="800"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p style="font-size: small;">&copy; 2024 NO-DENGUE - Todos los derechos reservados. Versión 0.1</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#menu-toggle').change(function() {
+      $('.sidebar').toggleClass('show');
+    });
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+<script>
+$('#bootstrapForm').submit(function (event) {
+    event.preventDefault()
+    var extraData = {}
+    $('#bootstrapForm').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+        error: function () {
+            // Submit of form should be successful but JSONP callback will fail because Google Forms
+            // does not support it, so this is handled as a failure.
+            alert('Reporte enviado. Gracias por colaborar!')
+            // You can also redirect the user to a custom thank-you page:
+            window.location = 'http://www.kevynrdz.com.ar/no-dengue'
+        }
+    })
+})
+</script>
+</body>
+</html>
